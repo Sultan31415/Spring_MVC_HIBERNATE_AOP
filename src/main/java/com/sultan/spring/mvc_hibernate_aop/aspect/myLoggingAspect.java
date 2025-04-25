@@ -20,7 +20,7 @@ public class myLoggingAspect {
     public Object aroundAllObjectAdvicece(ProceedingJoinPoint joinPoint) throws Throwable {
         MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
         String methodName = methodSignature.getName();
-        System.out.println("Begin of method: " + methodName);
+        System.out.println("git of method: " + methodName);
         Object targetMethodRes = joinPoint.proceed();
 
         System.out.println("End of method: " + methodName);
